@@ -117,7 +117,7 @@ public class ComponentActions implements Serializable {
 			SingleDraw singleDraw = new SingleDraw();
 			List<Integer> singleLine = new ArrayList<Integer>();
 			
-			for (String number : line.replace("\r", "").replace("\t", "").split(",")) {
+			for (String number : line.replace("\r", "").replace("\t", "").split(" ")) {
 				singleLine.add(Integer.parseInt(number));
 			}
 			singleDraw.setDrawNumbers(singleLine);
